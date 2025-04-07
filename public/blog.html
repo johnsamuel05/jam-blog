@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog – JAM Blogs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background: #1f1f1f;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ffb347;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .blog-hero {
+      background: linear-gradient(to right, #ffe259, #ffa751);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .blog-hero h2 {
+      font-size: 2.3rem;
+      color: #1f1f1f;
+    }
+
+    .blog-hero p {
+      font-size: 1.1rem;
+      color: #444;
+      max-width: 700px;
+      margin: 10px auto 0;
+    }
+
+    .post {
+      background: #fff;
+      margin: 40px auto;
+      padding: 30px;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .post h3 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .post p {
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .comment-section {
+      margin-top: 40px;
+    }
+
+    .comment-section h4 {
+      margin-bottom: 10px;
+    }
+
+    .comment-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .comment-form button {
+      background: #ffb347;
+      border: none;
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .comment-form button:hover {
+      background: #ff9f1a;
+    }
+
+    .comment {
+      background: #f9f9f9;
+      padding: 12px;
+      border-left: 4px solid #ffa500;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+    .comment strong {
+      display: block;
+      color: #222;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      background: #1f1f1f;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JAM Blogs</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+    </nav>
+  </header>
+
+  <section class="blog-hero">
+    <h2>Welcome to the Blog</h2>
+    <p>Fresh thoughts, sarcastic stories, and some coffee-fueled code dumps.</p>
+  </section>
+
+  <section class="post">
+    <h3>Why JavaScript is Like That Friend Who Promises to Help and Then Crashes Your Laptop</h3>
+    <p>
+      It all started when I tried to console.log() my way out of a problem. Next thing I know, I’ve got 600 lines of spaghetti code and a mysterious “undefined” haunting my dreams. This blog is dedicated to that very moment.
+    </p>
+    <p>
+      JavaScript is powerful. It’s fast. It runs everywhere. But let’s be honest — sometimes it behaves like it woke up on the wrong side of the stack. It lets you make mistakes with no complaints. You can assign a function to a variable, mutate it, pass it into another function and expect things to just… work. And somehow, it still does.
+    </p>
+  </section>
+
+  <section class="post comment-section">
+    <h4>Leave a Comment 👇</h4>
+    <form class="comment-form" method="POST" action="/blog">
+      <input type="text" name="username" placeholder="Your Name" required />
+      <textarea name="comment" rows="4" placeholder="Your Comment" required></textarea>
+      <button type="submit">Submit Comment</button>
+    </form>
+
+    <div id="comments">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JAM Blogs. Made with 😤 by @samjohn_offl</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JAM Blogs - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background: #1f1f1f;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ffb347;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      background: linear-gradient(to right, #ffe259, #ffa751);
+      text-align: center;
+      color: #333;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 50px 20px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 250px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .flip-card-front {
+      background-color: #ffffff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .flip-card-back {
+      background-color: #ffb347;
+      color: white;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .flip-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .flip-card p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #1f1f1f;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JAM Blogs</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to JAM Blogs</h2>
+    <p>Explore thoughts, tutorials, stories, and inspiration across different topics.</p>
+  </section>
+
+  <section class="card-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>💻 Tech</h3>
+          <p>Explore the latest in coding, DevOps, AI, and more.</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>💻 Tech Blogs</h3>
+          <p>Stay updated with tutorials and trends from JAM.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>🌱 Lifestyle</h3>
+          <p>Productivity hacks, motivation, and work-life balance.</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>🌱 Lifestyle Blogs</h3>
+          <p>Live better, think clearer, dream bigger.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>🍕 Food</h3>
+          <p>Recipes, food reviews, and everything delicious.</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>🍕 Food Blogs</h3>
+          <p>Explore a world of flavors through JAM's lens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JAM Blogs. Made with 😤 by @samjohn_offl</p>
+  </footer>
+
+</body>
+</html>
